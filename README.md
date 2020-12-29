@@ -1,4 +1,13 @@
 # BLOpenFlasher: Flash Firmware to BL602 (Tested on PineCone)
+
+TODO: Connect to PineCone USB Serial
+
+```bash
+sudo screen /dev/ttyUSB0 2000000
+```
+
+# Previous Instructions
+
 This is open source version for flash_tools, not perfect but open source totally. The current version also require python3 env, and if not please use tools to convert dts to dtb.
 
 # Installing dependencies

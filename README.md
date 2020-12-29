@@ -1,4 +1,4 @@
-# BLOpenFlasher
+# BLOpenFlasher: Flash Firmware to BL602 (Tested on PineCone)
 This is open source version for flash_tools, not perfect but open source totally. The current version also require python3 env, and if not please use tools to convert dts to dtb.
 
 # Installing dependencies

@@ -605,9 +605,10 @@ func (this *Image)CreateImage() bool{
         for i:=176; i<this.FWOffset; i++ {
             outBytes[i] = 0xff
         }
-        fmt.Printf("%+v\n", ini.Section("BOOTHEADER_CFG")) ////
+        // fmt.Printf("%+v\n", ini.Section("BOOTHEADER_CFG")) ////
         for key, val := range configKeys {
             v, _ := ini.Section("BOOTHEADER_CFG").Key(key).Int()
+            fmt.Printf("---- %+v = %#x\n", key, v) ////
             if key == "img_len" {
                 v = binlen
             }// else if key == "crc32" {

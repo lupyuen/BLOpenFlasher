@@ -605,6 +605,7 @@ func (this *Image)CreateImage() bool{
         for i:=176; i<this.FWOffset; i++ {
             outBytes[i] = 0xff
         }
+        fmt.Printf("%+v\n", ini.Section("BOOTHEADER_CFG")) ////
         for key, val := range configKeys {
             v, _ := ini.Section("BOOTHEADER_CFG").Key(key).Int()
             if key == "img_len" {
